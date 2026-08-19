@@ -70,7 +70,7 @@ a {
 }
 
 .logo {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.04em;
 }
@@ -81,7 +81,7 @@ nav {
 }
 
 nav a {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--muted);
 
@@ -109,12 +109,13 @@ nav a:hover {
 .eyebrow {
     margin-bottom: 18px;
 
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.14em;
 
     color: var(--accent);
 }
+
 
 .hero h1 {
     max-width: 900px;
@@ -226,6 +227,22 @@ nav a:hover {
 /* ================================
    Experience
 ================================ */
+.current-label {
+    display: block;
+    width: fit-content;
+
+    margin-bottom: 8px;
+    padding: 4px 7px;
+
+    border-radius: 4px;
+
+    background: var(--text);
+    color: white;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
 
 .timeline {
     border-top: 1px solid var(--border);
