@@ -299,8 +299,7 @@ nav a:hover {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    gap: 18px;
+    gap: 24px 18px; 
 }
 
 .project-card {
@@ -326,6 +325,12 @@ nav a:hover {
 
     box-shadow:
         0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.project-card-link {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
 }
 
 .project-market {
@@ -484,8 +489,9 @@ footer {
     }
 
     .project-grid {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+}
 
     .expertise-grid {
         grid-template-columns: 1fr;

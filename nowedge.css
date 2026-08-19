@@ -1,0 +1,424 @@
+/* ================================
+   NowEdge Case Study
+================================ */
+
+.case-hero {
+    padding: 90px 0 110px;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 60px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: var(--muted);
+
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--text);
+}
+
+.case-hero h1 {
+    margin-top: 10px;
+
+    font-size: clamp(56px, 8vw, 96px);
+    line-height: 0.98;
+    letter-spacing: -0.07em;
+}
+
+.case-subtitle {
+    margin-top: 18px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    color: var(--muted);
+}
+
+.case-intro {
+    max-width: 720px;
+
+    margin-top: 28px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+.case-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 65px;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.meta-item {
+    padding: 24px 20px 24px 0;
+}
+
+.meta-item + .meta-item {
+    padding-left: 20px;
+
+    border-left: 1px solid var(--border);
+}
+
+.meta-item span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+
+    color: var(--muted);
+}
+
+.meta-item strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ================================
+   Case Sections
+================================ */
+
+.case-section {
+    padding: 110px 0;
+}
+
+.case-section-alt {
+    background: var(--surface-alt);
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+
+    gap: 60px;
+}
+
+.case-label {
+    padding-top: 8px;
+}
+
+.case-content {
+    max-width: 760px;
+}
+
+.case-content h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+}
+
+.case-content p {
+    margin-top: 24px;
+
+    font-size: 16px;
+
+    color: var(--muted);
+}
+
+.case-content p + p {
+    margin-top: 16px;
+}
+
+
+/* ================================
+   Module List
+================================ */
+
+.module-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 30px;
+}
+
+.module-list span,
+.leadership-points span,
+.technology-list span {
+    padding: 7px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    background: var(--surface);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: var(--muted);
+}
+
+
+/* ================================
+   Case List
+================================ */
+
+.case-list {
+    margin-top: 35px;
+
+    border-top: 1px solid var(--border);
+}
+
+.case-list > div {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+
+    gap: 18px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.case-list span {
+    font-size: 11px;
+    font-weight: 700;
+
+    color: var(--accent);
+}
+
+.case-list p {
+    margin: 0;
+
+    font-size: 14px;
+    color: var(--text);
+}
+
+
+/* ================================
+   Quality
+================================ */
+
+.case-heading {
+    margin-bottom: 55px;
+}
+
+.quality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.quality-card {
+    min-height: 260px;
+
+    padding: 30px;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    background: var(--surface);
+}
+
+.quality-number {
+    font-size: 10px;
+    font-weight: 700;
+
+    color: var(--accent);
+}
+
+.quality-card h3 {
+    margin-top: 42px;
+
+    font-size: 20px;
+    letter-spacing: -0.03em;
+}
+
+.quality-card p {
+    margin-top: 12px;
+
+    font-size: 14px;
+    color: var(--muted);
+}
+
+
+/* ================================
+   Integrations
+================================ */
+
+.integration-list {
+    margin-top: 35px;
+
+    border-top: 1px solid var(--border);
+}
+
+.integration-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.integration-list strong {
+    font-size: 15px;
+}
+
+.integration-list span {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+
+/* ================================
+   Leadership
+================================ */
+
+.leadership-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 30px;
+}
+
+
+/* ================================
+   Outcome
+================================ */
+
+.outcome-section {
+    padding: 140px 0;
+}
+
+.outcome-section h2 {
+    max-width: 850px;
+
+    font-size: clamp(42px, 6vw, 74px);
+    line-height: 1.04;
+    letter-spacing: -0.065em;
+}
+
+.outcome-section h2 span {
+    display: block;
+
+    color: var(--muted);
+}
+
+.outcome-section > .container > p:last-child {
+    max-width: 650px;
+
+    margin-top: 28px;
+
+    font-size: 17px;
+
+    color: var(--muted);
+}
+
+
+/* ================================
+   Technology
+================================ */
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.technology-list span {
+    padding: 10px 13px;
+
+    font-size: 12px;
+}
+
+
+/* ================================
+   Case Footer
+================================ */
+
+.case-footer {
+    padding: 65px 0;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 800px) {
+
+    .case-hero {
+        padding: 70px 0 80px;
+    }
+
+    .case-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meta-item + .meta-item {
+        border-left: none;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .case-label {
+        padding-top: 0;
+    }
+
+    .quality-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .case-hero h1 {
+        font-size: 56px;
+    }
+
+    .case-section {
+        padding: 80px 0;
+    }
+
+    .case-meta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .meta-item {
+        padding: 18px 10px 18px 0;
+    }
+
+    .meta-item + .meta-item {
+        padding-left: 10px;
+    }
+
+    .quality-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quality-card {
+        min-height: auto;
+    }
+
+    .integration-list div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
