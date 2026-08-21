@@ -12,8 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -21,11 +20,27 @@
 
 <body>
 
-    <!-- Navigation -->
 <header class="navbar">
-    <div class="nav-container">
+    <div class="nav-container top-bar">
 
         <a href="#home" class="logo">ASIF.</a>
+
+        <div class="top-socials">
+            <a href="https://www.linkedin.com/in/asif925/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="top-social-btn top-social-btn--linkedin">
+                <img src="LinkedIn.png" alt="" width="16" height="16">
+                LinkedIn
+            </a>
+            <a href="https://github.com/asifaims"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="top-social-btn top-social-btn--github">
+                <img src="github.png" alt="" width="16" height="16">
+                GitHub
+            </a>
+        </div>
 
         <button class="menu-toggle"
                 type="button"
@@ -37,627 +52,419 @@
             <span></span>
         </button>
 
-        <nav class="desktop-nav">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#work">Work</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#tools">Tools</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
     </div>
 
+    <nav class="side-nav" aria-label="Primary">
+        <a href="#home" class="side-nav-link is-active" data-section="home" title="Home" aria-label="Home">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+        </a>
+        <a href="#work" class="side-nav-link" data-section="work" title="Work" aria-label="Work">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        </a>
+        <a href="#skills" class="side-nav-link" data-section="skills" title="Skills" aria-label="Skills">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </a>
+        <a href="#certifications" class="side-nav-link" data-section="certifications" title="Certifications" aria-label="Certifications">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.2 13.5 7 22l5-2 5 2-1.2-8.5"/></svg>
+        </a>
+        <a href="#experience" class="side-nav-link" data-section="experience" title="Experience" aria-label="Experience">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </a>
+        <a href="#contact" class="side-nav-link side-nav-cta" data-section="contact" title="Contact" aria-label="Contact">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+    </nav>
+
     <nav class="mobile-nav" id="mobile-menu">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
         <a href="#work">Work</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#tools">Tools</a>
-        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/asif925/"
+           target="_blank"
+           rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/asifaims"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
     </nav>
 </header>
 
 
-    <main>
-
-        <!-- Hero -->
-<section id="home" class="hero">
-    <div class="container">
-
-        <p class="eyebrow">HEAD OF QUALITY & PRODUCT DELIVERY</p>
-
-        <h1>
-            Quality Engineering.
-            <span>Product Delivery.</span>
-            Strong Teams.
-        </h1>
-
-        <p class="hero-description">
-            I lead quality, delivery, and engineering teams to build and ship
-            reliable software products.
-        </p>
-
-        <div class="hero-actions">
-
-    <div class="hero-primary-actions">
-
-        <a href="#work" class="button primary">
-            View My Work
-        </a>
-
-        <a href="Muhammad Asif Awan - SQA Engineer.pdf"
-           class="button secondary"
-           download>
-            Download CV
-        </a>
-
-        </div>
-
-        <a href="https://www.linkedin.com/in/asif925/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button linkedin-button">
-            Connect on LinkedIn
-        </a>
-
-    </div>
-
-    </div>
-</section>
-
-
-        <!-- About -->
-        <section id="about" class="section section-alt">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">ABOUT</p>
-                    <h2>Quality, delivery, and people.</h2>
-                </div>
-
-                <div class="about-content">
-
-                    <p>
-                        I work at the intersection of Quality Engineering,
-                        Product Delivery, and Team Leadership.
-                    </p>
-
-                    <p>
-                        My career has evolved from project coordination and
-                        quality assurance into software test engineering,
-                        test automation, QA leadership, and product delivery.
-                    </p>
-
-                    <p>
-                        Today, I lead a team of 10–12 professionals, own
-                        product quality and delivery, work directly with
-                        clients and end users, and collaborate with the CTO
-                        on future product planning.
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Experience -->
-        <section id="experience" class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">EXPERIENCE</p>
-                    <h2>Experience built across quality, engineering, and delivery.</h2>
-                </div>
-
-                <div class="timeline">
-
-                    <article class="timeline-item">
-                        <div class="timeline-date">
-                        <span class="current-label">CURRENT</span>
-                        JUL 2026 — PRESENT
-                </div>
-
-                        <div class="timeline-content">
-                            <h3>Head of Quality & Product Delivery</h3>
-
-                            <p class="company">AntonX Private Limited</p>
-
-                            <p>
-                                Leading quality and product delivery while
-                                managing a team of 10–12 professionals,
-                                supporting clients and end users, and
-                                contributing to future product planning.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article class="timeline-item">
-                        <div class="timeline-date">JUL 2025 — JUL 2026</div>
-
-                        <div class="timeline-content">
-                            <h3>Senior Software Engineer in Test</h3>
-                            <p class="company">AntonX Private Limited</p>
-
-                            <p>
-                                Led QA engineering, automation, QA strategy,
-                                production quality, client coordination,
-                                and a team of QA resources.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article class="timeline-item">
-                        <div class="timeline-date">JUL 2024 — JUL 2025</div>
-
-                        <div class="timeline-content">
-                            <h3>Software Engineer in Test – II</h3>
-                            <p class="company">AntonX Private Limited</p>
-
-                            <p>
-                                Expanded into test automation, team support,
-                                and training while continuing hands-on
-                                quality engineering.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article class="timeline-item">
-                        <div class="timeline-date">JUL 2023 — JUL 2024</div>
-
-                        <div class="timeline-content">
-                            <h3>Associate Quality Assurance Engineer</h3>
-                            <p class="company">AntonX Private Limited</p>
-
-                            <p>
-                                Performed end-to-end testing across web and
-                                mobile applications and contributed to
-                                requirements, test planning, and Agile delivery.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article class="timeline-item">
-                        <div class="timeline-date">JUN 2021 — JUN 2023</div>
-
-                        <div class="timeline-content">
-                            <h3>Assistant Project Manager & QA</h3>
-                            <p class="company">AntonX Private Limited</p>
-
-                            <p>
-                                Combined project coordination and quality
-                                assurance across requirements, testing,
-                                stakeholder communication, and delivery.
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Work -->
-        <section id="work" class="section section-alt">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">SELECTED WORK</p>
-                    <h2>Products I've helped deliver.</h2>
-                </div>
-                <div class="project-grid">
-                <a href="nowedge.html" class="project-card project-card-link">
-
-                    <p class="project-market">UK & PAKISTAN · 2025 — PRESENT</p>
-
-                            <h3>NowEdge POS</h3>
-
-                            <p>
-                                Centralized POS platform with 16+ modules and
-                                integrations with major food ordering and delivery
-                                platforms.
-                            </p>
-
-                            <div class="project-role">
-                                QA Lead · Team Manager
-                            </div>
-
-                            <span class="project-link">
-                                View case study →
-                            </span>
-
-                        </a>
-
-
-                    <a href="now.html" class="project-card project-card-link">
-                        <p class="project-market">UNITED KINGDOM · 2023 — PRESENT</p>
-                        <h3>NOW by HMC</h3>
-
-                        <p>
-                            Food ordering ecosystem comprising three mobile
-                            applications and two administrative dashboards.
-                        </p>
-
-                        <div class="project-role">
-                            QA Engineer · Project Manager
-                        </div>
-                        <span class="project-link">
-                            View case study →
-                        </span>
-                    </a>
-
-
-                    <a href="costa.html" class="project-card project-card-link">
-
-                    <p class="project-market">BAHRAIN · 2021 — 2022</p>
-
-                    <h3>Costa Coffee Club BH</h3>
-
-                    <p>
-                        Mobile applications and administration systems
-                        developed for Costa Coffee's Bahrain operations.
-                    </p>
-
-                    <div class="project-role">
-                        Tester · Scrum Master
-                    </div>
-
-                    <span class="project-link">
-                        View case study →
-                    </span>
-
-                </a>
-
-
-                    <a href="noca.html" class="project-card project-card-link">
-
-                    <p class="project-market">USA · 2022 — 2023</p>
-
-                    <h3>NOCA</h3>
-
-                    <p>
-                        Social network designed around real-life connections
-                        between users and their extended social circles.
-                    </p>
-
-                    <div class="project-role">
-                        QA Engineer · Client Relations · Scrum Master
-                    </div>
-
-                    <span class="project-link">
-                        View case study →
-                    </span>
-
-                </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Expertise -->
-        <section id="expertise" class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">EXPERTISE</p>
-                    <h2>Quality engineering & delivery.</h2>
-                </div>
-
-                <div class="expertise-grid">
-
-                <div class="expertise-item">
-                    <h3>QA Strategy</h3>
-                    <p>
-                        Defining QA strategies, test plans, quality standards,
-                        and testing approaches aligned with product requirements.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>Test Automation</h3>
-                    <p>
-                        Building automated coverage for critical business flows
-                        using Playwright with JavaScript.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>Shift-Left Testing</h3>
-                    <p>
-                        Bringing quality activities earlier into the development
-                        lifecycle to identify issues and risks sooner.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>API Automation</h3>
-                    <p>
-                        Validating APIs and automating API-level testing to improve
-                        coverage and reduce repetitive manual validation.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>Database Testing</h3>
-                    <p>
-                        Validating data integrity and application behaviour through
-                        database-level testing and verification.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>Regression Automation</h3>
-                    <p>
-                        Maintaining automated regression coverage for major and
-                        critical workflows to improve release confidence.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>Load & Stress Testing</h3>
-                    <p>
-                        Evaluating system behaviour and stability under increased
-                        traffic and demanding usage conditions.
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3>Production & Release Quality</h3>
-                    <p>
-                        Supporting release validation, production readiness,
-                        and continuous improvement of the release process.
-                    </p>
-                </div>
-
-            </div>
-
-            </div>
-        </section>
-
-            <!-- Tools & Technologies -->
-            <section id="tools" class="section section-alt">
-                <div class="container">
-
-                    <div class="section-heading">
-                        <p class="eyebrow">TOOLS & TECHNOLOGIES</p>
-                        <h2>Tools I work with.</h2>
-                    </div>
-
-                    <div class="tools-list">
-
-                        <div class="tool-group">
-                            <span class="tool-category">TEST AUTOMATION</span>
-
-                            <div class="tool-items">
-                                <span>Playwright</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-
-
-                        <div class="tool-group">
-                            <span class="tool-category">API & DATABASE</span>
-
-                            <div class="tool-items">
-                                <span>Postman</span>
-                                <span>Swagger</span>
-                                <span>MySQL</span>
-                                <span>MySQL Workbench</span>
-                            </div>
-                        </div>
-
-
-                        <div class="tool-group">
-                            <span class="tool-category">TESTING & PERFORMANCE</span>
-
-                            <div class="tool-items">
-                                <span>JMeter</span>
-                                <span>Graffana K6</span>
-                                <span>BrowserStack</span>
-                            </div>
-                        </div>
-
-
-                        <div class="tool-group">
-                            <span class="tool-category">PROJECT & COLLABORATION</span>
-
-                            <div class="tool-items">
-                                <span>JIRA</span>
-                                <span>ClickUp</span>
-                            </div>
-                        </div>
-
-
-                        <div class="tool-group">
-                            <span class="tool-category">DEVELOPMENT & VERSION CONTROL</span>
-
-                            <div class="tool-items">
-                                <span>VS Code</span>
-                                <span>Git</span>
-                                <span>GitHub</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Education & Certifications -->
-<section id="education" class="section">
-    <div class="container">
-
-        <div class="section-heading">
-            <p class="eyebrow">EDUCATION & CERTIFICATIONS</p>
-            <h2>Education and continued learning.</h2>
-        </div>
-
-        <div class="education-layout">
-
-            <!-- Education -->
-            <div class="education-block">
-
-                <p class="education-label">EDUCATION</p>
-
-                <div class="education-item">
-                    <h3>B.Sc. (Hons.) Computer System Engineering</h3>
-
-                    <p class="education-institution">
-                        University of Engineering and Technology, Peshawar
-                    </p>
-
-                    <span class="education-date">
-                        2015 — 2019
-                    </span>
-                </div>
-
-            </div>
-
-
-            <!-- Certifications -->
-            <div class="education-block">
-
-                <p class="education-label">CERTIFICATIONS</p>
-
-                <div class="certification-list">
-
-                    <div class="certification-item">
-                        <span class="certification-number">01</span>
-
-                        <div>
-                            <h3>Software Testing & Quality Assurance</h3>
-                            <p>Dice Analytics</p>
-                        </div>
-                    </div>
-
-
-                    <div class="certification-item">
-                        <span class="certification-number">02</span>
-
-                        <div>
-                            <h3>Playwright with JavaScript</h3>
-                            <p>SDET-QA</p>
-                        </div>
-                    </div>
-
-
-                    <div class="certification-item">
-                        <span class="certification-number">03</span>
-
-                        <div>
-                            <h3>Database Testing</h3>
-                            <p>SDET-QA</p>
-                        </div>
-                    </div>
-
-
-                    <div class="certification-item">
-                        <span class="certification-number">04</span>
-
-                        <div>
-                            <h3>MySQL for Testers</h3>
-                            <p>SDET-QA</p>
-                        </div>
-                    </div>
-
-
-                    <div class="certification-item">
-                        <span class="certification-number">05</span>
-
-                        <div>
-                            <h3>Git & GitHub</h3>
-                        </div>
-                    </div>
-
-
-                    <div class="certification-item">
-                        <span class="certification-number">06</span>
-
-                        <div>
-                            <h3>Business Communication</h3>
-                            <p>IlmX LUMS</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact -->
-
-        <section id="contact" class="section contact-section section-alt">
-            <div class="container">
-
-                <p class="eyebrow">CONTACT</p>
-
-                <h2>Let's connect.</h2>
-
-                <p>
-                    Interested in quality engineering, product delivery,
-                    technology, or simply want to connect?
+<main>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-layout">
+
+            <div class="hero-copy reveal-on-load">
+                <p class="eyebrow">Head of Quality & Product Delivery</p>
+
+                <h1 class="hero-name">
+                    <span>I deliver products</span>
+                    <span>that work.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I lead quality, delivery, and engineering teams to ship
+                    reliable software products.
                 </p>
 
-                <div class="contact-links">
+                <div class="hero-actions">
+                    <a href="#work" class="button primary">View Work</a>
+                    <a href="Muhammad Asif Awan - SQA Engineer.pdf"
+                       class="button secondary"
+                       download>Download CV</a>
+                </div>
+            </div>
 
-                    <a href="mailto:asifmuh001@gmail.com">
-                        Email
+            <div class="hero-visual reveal-on-load reveal-delay">
+                <div class="hero-portrait-frame">
+                    <img src="Me.png"
+                         alt="Muhammad Asif Awan"
+                         width="900"
+                         height="1100">
+                </div>
+                <div class="metric-badge">
+                    <span class="metric-label">Team led</span>
+                    <strong class="metric-value">10–12</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Selected Work -->
+    <section id="work" class="section work-section reveal">
+        <div class="work-band">
+            <div class="container">
+
+                <div class="section-heading split">
+                    <div>
+                        <p class="eyebrow">Selected Work</p>
+                        <h2>Products I've helped deliver.</h2>
+                    </div>
+                    <p class="section-tag">Featured Projects</p>
+                </div>
+
+                <div class="project-grid">
+
+                    <a href="nowedge.html" class="project-card">
+                        <div class="project-logo">
+                            <img src="NowEdge.jpg" alt="NowEdge logo" width="200" height="80">
+                        </div>
+                        <p class="project-market">UK & Pakistan · 2025 — Present</p>
+                        <h3>NowEdge POS</h3>
+                        <p>Centralized restaurant POS with 16+ modules and major delivery integrations.</p>
+                        <div class="project-role">QA Lead · Team Manager</div>
+                        <span class="project-link">View case study →</span>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/asif925/"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                        LinkedIn
+                    <a href="now.html" class="project-card">
+                        <div class="project-logo project-logo--dark">
+                            <img src="HalalNow.png" alt="NOW by HMC logo" width="200" height="80">
+                        </div>
+                        <p class="project-market">United Kingdom · 2023 — Present</p>
+                        <h3>NOW by HMC</h3>
+                        <p>Food ordering ecosystem across three apps and two admin dashboards.</p>
+                        <div class="project-role">QA Engineer · Project Manager</div>
+                        <span class="project-link">View case study →</span>
                     </a>
 
-                    <a href="https://github.com/asifaims"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                        GitHub
+                    <a href="costa.html" class="project-card">
+                        <div class="project-logo">
+                            <img src="Costa.jpg" alt="Costa Coffee logo" width="200" height="80">
+                        </div>
+                        <p class="project-market">Bahrain · 2021 — 2022</p>
+                        <h3>Costa Coffee Club BH</h3>
+                        <p>Mobile and admin systems for Costa Coffee's Bahrain operations.</p>
+                        <div class="project-role">Tester · Scrum Master</div>
+                        <span class="project-link">View case study →</span>
                     </a>
 
-                    <a href="Muhammad-Asif-Awan-CV.pdf"
-                    download>
-                        Download CV
+                    <a href="noca.html" class="project-card">
+                        <div class="project-logo">
+                            <img src="Noca.jpg" alt="NOCA logo" width="200" height="80">
+                        </div>
+                        <p class="project-market">USA · 2022 — 2023</p>
+                        <h3>NOCA</h3>
+                        <p>Social network built around real-life connections and extended circles.</p>
+                        <div class="project-role">QA · Client Relations · Scrum Master</div>
+                        <span class="project-link">View case study →</span>
                     </a>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills & Tools -->
+    <section id="skills" class="section reveal">
+        <div class="container">
+
+            <div class="section-heading split">
+                <div>
+                    <p class="eyebrow">Skills & Tools</p>
+                    <h2>How I work.</h2>
+                </div>
+                <p class="section-tag">Technical Arsenal</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <span class="skill-icon" aria-hidden="true"></span>
+                        <h3>Quality</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span>QA Strategy</span>
+                        <span>Test Automation</span>
+                        <span>Shift-Left</span>
+                        <span>API Testing</span>
+                        <span>Database Testing</span>
+                        <span>Regression</span>
+                        <span>Load & Stress</span>
+                        <span>Release Quality</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <span class="skill-icon" aria-hidden="true"></span>
+                        <h3>Automation</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span>Playwright</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <span class="skill-icon" aria-hidden="true"></span>
+                        <h3>API & Data</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span>Postman</span>
+                        <span>Swagger</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <span class="skill-icon" aria-hidden="true"></span>
+                        <h3>Performance</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span>JMeter</span>
+                        <span>Grafana k6</span>
+                        <span>BrowserStack</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <span class="skill-icon" aria-hidden="true"></span>
+                        <h3>Delivery</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span>JIRA</span>
+                        <span>ClickUp</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
 
             </div>
-        </section>
-        
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2026 Muhammad Asif Awan</p>
         </div>
-    </footer>
+    </section>
 
-    <script>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section section-alt reveal">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Certifications</p>
+                <h2>Continued learning.</h2>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-item">
+                    <span class="cert-number">01</span>
+                    <div>
+                        <h3>Software Testing & Quality Assurance</h3>
+                        <p>Dice Analytics</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-number">02</span>
+                    <div>
+                        <h3>Playwright with JavaScript</h3>
+                        <p>SDET-QA</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-number">03</span>
+                    <div>
+                        <h3>Database Testing</h3>
+                        <p>SDET-QA</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-number">04</span>
+                    <div>
+                        <h3>MySQL for Testers</h3>
+                        <p>SDET-QA</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-number">05</span>
+                    <div>
+                        <h3>Git & GitHub</h3>
+                        <p>Practical coursework</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-number">06</span>
+                    <div>
+                        <h3>Business Communication</h3>
+                        <p>IlmX LUMS</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="education-note">
+                B.Sc. (Hons.) Computer System Engineering ·
+                University of Engineering and Technology, Peshawar · 2015 — 2019
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience" class="section reveal">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Experience</p>
+                <h2>AntonX Private Limited</h2>
+            </div>
+
+            <div class="exp-timeline">
+
+                <article class="exp-item">
+                    <div class="exp-marker" aria-hidden="true"></div>
+                    <div class="exp-body">
+                        <p class="exp-phase">
+                            <span class="current-label">Current</span>
+                            Jul 2026 — Present
+                        </p>
+                        <h3>Head of Quality & Product Delivery</h3>
+                    </div>
+                </article>
+
+                <article class="exp-item">
+                    <div class="exp-marker" aria-hidden="true"></div>
+                    <div class="exp-body">
+                        <p class="exp-phase">Jul 2025 — Jul 2026</p>
+                        <h3>Senior Software Engineer in Test</h3>
+                    </div>
+                </article>
+
+                <article class="exp-item">
+                    <div class="exp-marker" aria-hidden="true"></div>
+                    <div class="exp-body">
+                        <p class="exp-phase">Jul 2024 — Jul 2025</p>
+                        <h3>Software Engineer in Test – II</h3>
+                    </div>
+                </article>
+
+                <article class="exp-item">
+                    <div class="exp-marker" aria-hidden="true"></div>
+                    <div class="exp-body">
+                        <p class="exp-phase">Jul 2023 — Jul 2024</p>
+                        <h3>Associate Quality Assurance Engineer</h3>
+                    </div>
+                </article>
+
+                <article class="exp-item">
+                    <div class="exp-marker" aria-hidden="true"></div>
+                    <div class="exp-body">
+                        <p class="exp-phase">Jun 2021 — Jun 2023</p>
+                        <h3>Assistant Project Manager & QA</h3>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Marquee (visual separator) -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>AUTOMATION · PERFORMANCE · QUALITY · DELIVERY · </span>
+            <span>AUTOMATION · PERFORMANCE · QUALITY · DELIVERY · </span>
+            <span>AUTOMATION · PERFORMANCE · QUALITY · DELIVERY · </span>
+            <span>AUTOMATION · PERFORMANCE · QUALITY · DELIVERY · </span>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section reveal">
+        <div class="container contact-layout">
+
+            <div class="contact-identity">
+                <h2 class="contact-name">Muhammad Asif Awan</h2>
+                <p class="contact-status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Quality engineering, product delivery, or a quick hello.
+                </p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:asifmuh001@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/asif925/"
+                   target="_blank"
+                   rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/asifaims"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
+                <a href="Muhammad Asif Awan - SQA Engineer.pdf" download>Download CV</a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>© 2026 Muhammad Asif Awan</p>
+    </div>
+</footer>
+
+<script>
     const menuToggle = document.querySelector(".menu-toggle");
     const mobileNav = document.querySelector(".mobile-nav");
 
     menuToggle.addEventListener("click", () => {
         const isOpen = menuToggle.classList.toggle("open");
-
         mobileNav.classList.toggle("open", isOpen);
         menuToggle.setAttribute("aria-expanded", isOpen);
         menuToggle.setAttribute(
@@ -674,6 +481,48 @@
             menuToggle.setAttribute("aria-label", "Open navigation");
         });
     });
+
+    const revealEls = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+    } else {
+        revealEls.forEach((el) => el.classList.add("is-visible"));
+    }
+
+    const sideLinks = document.querySelectorAll(".side-nav-link");
+    const sectionIds = ["home", "work", "skills", "certifications", "experience", "contact"];
+
+    function updateActiveSideNav() {
+        const marker = window.innerHeight * 0.32;
+        let current = sectionIds[0];
+
+        for (const id of sectionIds) {
+            const section = document.getElementById(id);
+            if (!section) continue;
+            if (section.getBoundingClientRect().top <= marker) {
+                current = id;
+            }
+        }
+
+        sideLinks.forEach((link) => {
+            link.classList.toggle("is-active", link.dataset.section === current);
+        });
+    }
+
+    window.addEventListener("scroll", updateActiveSideNav, { passive: true });
+    window.addEventListener("resize", updateActiveSideNav);
+    updateActiveSideNav();
 </script>
 
 </body>
